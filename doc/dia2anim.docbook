@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"/usr/share/sgml/db41xml/docbookx.dtd">
+
+<!--  EXAMPLE:  (see "compile-command" at bottom of document)
+For emacs:  C-x c  (to compile)
+-->
+
+<article>
+  <title>Generate GIF animations from DIA graph</title>
+
+  <section>
+    <title>Copyright</title>
+    <programlisting>
+dia2anim - Create animation from schematic diagram
+Copyright (C) 2007, Steve Pothier <email>b4ape@users.sourceforge.net</email>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+    </programlisting>
+  </section>
+  <section>
+    <title>Introduction</title>
+    <para>To support research into automatic perception, I needed input data
+    with specific characteristics.  The most natural way to get such input
+    data was to create carefully controlled animation sequences.</para>
+<!--
+    <para><emphasis>The data is a SEQUENCE of observations that VARIES over
+    time, while the underlying CAUSES remain relatively
+    STABLE.</emphasis></para>
+-->
+  </section> 
+It will generate an image sequence (animation) of basic geometic shapes moving
+around in the field of view.  The schematic (dia diagram) can contain moving
+and non-moving objects.
+
+This tool was built to support research into automatic perception.  For
+instance, it might be used to generate data for the "Numenta Platform for
+Intelligent Computing" (NuPIC, http://www.numenta.com/)
+
+  <section>
+    <title>Usage</title>
+    <para>The <ulink url="http://live.gnome.org/Dia">Dia</ulink> diagram
+    editor is used to create a schematic of a scene.
+    The schematic represents static (non-moving) and dynamic (moving) objects.
+    In general Dia graphic objects will become static objects in the
+    animation.  The exception is when two Dia graphic objects are connected by
+    a line.  A connecting line indicates that the two endpoint graphics
+    represent <emphasis>multiple observations</emphasis> of the SAME physical
+    object.</para>
+    <para>Layers are used within Dia to simplify creating many animations with
+    the same static objects in them. For instance, I created a background
+    layer of static objects representing a traffic intersection (including
+    objects such as: medians, lane markings, sidewalks, crosswalks, and
+    buildings on the corners).
+    </para>
+  </section>
+</article>
+
+
+<!--
+Local Variables:
+fill-column:75
+compilation-read-command:nil
+compile-command:"docbook2html -u -o derived dia2anim.docbook"
+End:
+-->
+ 

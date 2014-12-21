@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Generate GIF animations from DIA graph</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
+><BODY
+CLASS="article"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="ARTICLE"
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+><A
+NAME="AEN1"
+>Generate GIF animations from DIA graph</A
+></H1
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>1. <A
+HREF="#AEN3"
+>Copyright</A
+></DT
+><DT
+>2. <A
+HREF="#AEN7"
+>Introduction</A
+></DT
+><DT
+>3. <A
+HREF="#AEN10"
+>Usage</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN3"
+>1. Copyright</A
+></H2
+><PRE
+CLASS="programlisting"
+>&#13;dia2anim - Create animation from schematic diagram
+Copyright (C) 2007, Steve Pothier <CODE
+CLASS="email"
+>&#60;<A
+HREF="mailto:b4ape@users.sourceforge.net"
+>b4ape@users.sourceforge.net</A
+>&#62;</CODE
+>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+    </PRE
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="AEN7"
+>2. Introduction</A
+></H2
+><P
+>To support research into automatic perception, I needed input data
+    with specific characteristics.  The most natural way to get such input
+    data was to create carefully controlled animation sequences.</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="AEN10"
+>3. Usage</A
+></H2
+><P
+>The <A
+HREF="http://live.gnome.org/Dia"
+TARGET="_top"
+>Dia</A
+> diagram
+    editor is used to create a schematic of a scene.
+    The schematic represents static (non-moving) and dynamic (moving) objects.
+    In general Dia graphic objects will become static objects in the
+    animation.  The exception is when two Dia graphic objects are connected by
+    a line.  A connecting line indicates that the two endpoint graphics
+    represent <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>multiple observations</I
+></SPAN
+> of the SAME physical
+    object.</P
+><P
+>Layers are used within Dia to simplify creating many animations with
+    the same static objects in them. For instance, I created a background
+    layer of static objects representing a traffic intersection (including
+    objects such as: medians, lane markings, sidewalks, crosswalks, and
+    buildings on the corners).
+    </P
+></DIV
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,4 @@
+- Input parameter to set scaling (unzoom)
+- "background", "foreground" layers are special but neither required
+
+- make sure ALL dia objects get into the animation

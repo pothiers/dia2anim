@@ -1,0 +1,17 @@
+REQUIREMENTS:
+To use dia2anim you need
+  - networkx (>=0.33) 
+    https://networkx.lanl.gov/wiki/download
+  - xsltproc
+    http://xmlsoft.org/XSLT/
+  - Python Imaging Library (PIL)
+    http://www.pythonware.com/products/pil/
+  - ImageMagick
+    http://www.imagemagick.org/
+
+
+QUICK INSTALL (from source):
+  - Download the source (tar.gz or zip file)
+  - Unpack and change directory to dia2anim-x.y.z
+  - Run "python setup.py install" to build and install
+

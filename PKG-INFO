@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: dia2anim
+Version: 0.3.1
+Summary: dia2anim creates a GIF animation from a schematic of a scene (drawn using Dia).
+Home-page: http://dia2anim.sourceforge.net/
+Author: Steve Pothier
+Author-email: b4ape@users.sourceforge.net
+License: GPL
+Description: 
+        This tool was built to support research into automatic perception.  For
+        instance, it might be used to generate data for the "Numenta Platform for
+        Intelligent Computing" (NuPIC, http://www.numenta.com/)
+Keywords: dia,gif,animate,movie
+Platform: UNKNOWN
